@@ -35,6 +35,11 @@ public class Controller {
 
     public void NormalMode() {
         btnNormalMode.getScene().getStylesheets().clear();
+        btnBlueMode.getScene().getStylesheets()
+                .add(getClass()
+                        .getResource("Stylesheets/normalmode.css")
+                        .toExternalForm());
+        lblCurrentState.setText("Current style: Blue");
         lblCurrentState.setText("Current style: Normal");
 
     }
@@ -43,7 +48,7 @@ public class Controller {
         btnDarkMode.getScene().getStylesheets().clear();
         btnBlueMode.getScene().getStylesheets()
                 .add(getClass()
-                        .getResource("Stylesheets/normal.css")
+                        .getResource("Stylesheets/bluemode.css")
                         .toExternalForm());
         lblCurrentState.setText("Current style: Blue");
     }
