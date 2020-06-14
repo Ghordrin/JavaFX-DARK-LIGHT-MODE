@@ -25,6 +25,7 @@ public class Controller {
     }
 
     public void DarkMode() {
+        btnDarkMode.getScene().getStylesheets().clear();
         btnDarkMode.getScene().getStylesheets()
                 .add(getClass()
                         .getResource("Stylesheets/darkmode.css")
@@ -39,6 +40,7 @@ public class Controller {
     }
 
     public void BlueMode() {
+        btnDarkMode.getScene().getStylesheets().clear();
         btnBlueMode.getScene().getStylesheets()
                 .add(getClass()
                         .getResource("Stylesheets/normal.css")
