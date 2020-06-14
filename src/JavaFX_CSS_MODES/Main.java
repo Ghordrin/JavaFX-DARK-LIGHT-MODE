@@ -18,7 +18,7 @@ public class Main extends Application {
         primaryStage.setTitle("State Machine");
         primaryStage.setResizable(false);
         Scene scene = new Scene(root, 1200, 850);
-        scene.getStylesheets().add("Stylesheets/normalmode.css");
+        scene.getStylesheets().add(getClass().getResource("Stylesheets/normalmode.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.show();
 
