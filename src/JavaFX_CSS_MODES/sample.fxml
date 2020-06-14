@@ -7,63 +7,54 @@
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171"
             fx:controller="JavaFX_CSS_MODES.Controller">
     <center>
-        <VBox fx:id="vbox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
               minWidth="-Infinity" prefHeight="579.0" prefWidth="879.0">
-            <children>
-                <Label fx:id="lblCurrentState" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0"
-                       prefWidth="600.0" text="Current style: Normal" textAlignment="CENTER">
-                    <font>
-                        <Font name="Corbel" size="18.0"/>
-                    </font>
-                    <VBox.margin>
-                        <Insets/>
-                    </VBox.margin>
-                    <opaqueInsets>
-                        <Insets/>
-                    </opaqueInsets>
-                </Label>
-                <HBox alignment="CENTER">
-                    <children>
-                        <ButtonBar buttonMinWidth="50.0" prefHeight="325.0" prefWidth="600.0">
-                            <buttons>
-                                <Button fx:id="btnNormalMode" alignment="CENTER" contentDisplay="CENTER"
-                                        mnemonicParsing="false" onAction="#NormalMode" text="Normal mode"/>
-                                <Button fx:id="btnBlueMode" mnemonicParsing="false" onAction="#BlueMode"
-                                        prefHeight="25.0" prefWidth="300.0" text="Blue color mode">
-                                    <font>
-                                        <Font name="Corbel" size="12.0"/>
-                                    </font>
-                                </Button>
-                                <Button fx:id="btnDarkMode" alignment="CENTER" mnemonicParsing="false"
-                                        onAction="#DarkMode" prefHeight="25.0" text="Dark mode">
-                                    <font>
-                                        <Font name="Corbel" size="12.0"/>
-                                    </font>
-                                </Button>
-                            </buttons>
-                            <padding>
-                                <Insets right="20.0"/>
-                            </padding>
-                        </ButtonBar>
-                    </children>
-                </HBox>
-            </children>
+            <Label fx:id="lblCurrentState" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0"
+                   prefWidth="600.0" text="Current style: Normal" textAlignment="CENTER">
+                <font>
+                    <Font name="Corbel" size="18.0"/>
+                </font>
+                <VBox.margin>
+                    <Insets/>
+                </VBox.margin>
+                <opaqueInsets>
+                    <Insets/>
+                </opaqueInsets>
+            </Label>
+            <HBox alignment="CENTER">
+                <ButtonBar buttonMinWidth="50.0" prefHeight="325.0" prefWidth="600.0">
+                    <buttons>
+                        <Button fx:id="btnNormalMode" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                                onAction="#NormalMode" text="Normal mode"/>
+                        <Button fx:id="btnBlueMode" mnemonicParsing="false" onAction="#BlueMode" prefHeight="25.0"
+                                prefWidth="300.0" text="Blue color mode">
+                            <font>
+                                <Font name="Corbel" size="12.0"/>
+                            </font>
+                        </Button>
+                        <Button fx:id="btnDarkMode" alignment="CENTER" mnemonicParsing="false" onAction="#DarkMode"
+                                prefHeight="25.0" text="Dark mode">
+                            <font>
+                                <Font name="Corbel" size="12.0"/>
+                            </font>
+                        </Button>
+                    </buttons>
+                    <padding>
+                        <Insets right="20.0"/>
+                    </padding>
+                </ButtonBar>
+            </HBox>
         </VBox>
     </center>
     <top>
-        <MenuBar BorderPane.alignment="CENTER">
-            <menus>
-                <Menu mnemonicParsing="false" text="File">
-                    <items>
-                        <MenuItem fx:id="menuClose" mnemonicParsing="false" onAction="#Close" text="Close"/>
-                    </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                    <items>
-                        <MenuItem mnemonicParsing="false" text="About"/>
-                    </items>
-                </Menu>
-            </menus>
+        <MenuBar fx:id="menuBar" nodeOrientation="RIGHT_TO_LEFT" onMouseDragged="#draggableMenu"
+                 BorderPane.alignment="CENTER">
+            <Menu mnemonicParsing="false" text="File">
+                <MenuItem mnemonicParsing="false" onAction="#Close" text="Close"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+                <MenuItem fx:id="about" mnemonicParsing="false" onAction="#about" text="About"/>
+            </Menu>
         </MenuBar>
     </top>
     <bottom>

@@ -27,7 +27,7 @@
 }
 
 .button:hover {
-    -fx-text-fill: white;
+    -fx-text-fill: rgba(87, 87, 87, 0.67);
 }
 
 .separator *.line {

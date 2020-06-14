@@ -29,7 +29,7 @@
 }
 
 .button:hover {
-    -fx-text-fill: white;
+    -fx-text-fill: #5862ff;
 }
 
 .separator *.line {
