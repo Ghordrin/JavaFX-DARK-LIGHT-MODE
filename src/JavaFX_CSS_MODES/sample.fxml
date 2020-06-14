@@ -7,8 +7,8 @@
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171"
             fx:controller="JavaFX_CSS_MODES.Controller">
     <center>
-        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-              minWidth="-Infinity" prefHeight="579.0" prefWidth="879.0">
+        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+              prefHeight="579.0" prefWidth="879.0">
             <Label fx:id="lblCurrentState" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0"
                    prefWidth="600.0" text="Current style: Normal" textAlignment="CENTER">
                 <font>

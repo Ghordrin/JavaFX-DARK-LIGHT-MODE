@@ -14,8 +14,8 @@ import java.net.URISyntaxException;
 
 
 public class Controller {
-    private double xOffset = 0;
-    private double yOffset = 0;
+    private double xOffset;
+    private double yOffset;
 
 
     @FXML
